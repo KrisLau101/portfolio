@@ -1,0 +1,32 @@
+/* Color Schemes:
+White: #E7ECEF
+Dark Blue: #274C77
+Mid Blue: #879CB3
+Lighter Pale Blue: #506C80
+Light Orange: #CD8B76
+Brown: #732F1C
+Burnt Orange: #E76F51
+} */
+
+.projectsContainer{
+    margin-top:100px;
+    width:100%;
+    min-height:100%;
+    max-height:fit-content;
+    background-color: rgba(0, 200, 240, 0.2);
+    background-image:url("https://i.pinimg.com/originals/61/f9/51/61f951ee6770732cba132c4b89c316b5.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.projectsTitle{
+    width:90%;
+    top:50px;
+    position:relative;
+    margin-inline:auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color:#506C80 ;
+    border-radius: 20px;
+    border:solid #274C77 5px;
+}

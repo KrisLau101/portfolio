@@ -1,0 +1,64 @@
+h1{
+    size:40px;
+    color:rgba(125, 194, 255, 0.8);
+}
+body{
+    background-color: #7aa1be;
+}
+.resumePage{
+    width:100%;
+    margin-top:110px;
+    display:inline-flex;
+    position:absolute;
+}
+.resumeContainer{
+    margin:40px;
+    text-align: center;
+    background-color: #7dc0f0;
+    height: max-content;
+    width:50%;
+    display:relative;
+    float:left;
+}
+
+.resume{
+    width:100%;
+    height:100%;
+    padding:10px;
+    text-align:center;
+    object-fit: contain;
+}
+.resumeMenu{
+    float:right;
+    width:40%;
+    height:80%;
+    margin-top: 20px;
+    display:flex;
+}
+
+.resumeMenu button{
+    width:30%;
+    height:20%;
+    margin:30px;
+    padding:15px;
+    color:white;
+    padding: 10px;
+    background-color: #879CB3;
+    border:solid #274C77 4px;
+    border-radius: 15px;
+}
+.resumeMenu button:hover{
+    background-color: #7489a0;
+}
+
+
+
+/* Color Schemes:
+White: #E7ECEF
+Dark Blue: #274C77
+Mid Blue: #879CB3
+Lighter Pale Blue: #506C80
+Light Orange: #CD8B76
+Brown: #732F1C
+Burnt Orange: #E76F51
+} */

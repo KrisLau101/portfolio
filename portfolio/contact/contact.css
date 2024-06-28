@@ -1,0 +1,82 @@
+
+/* Color Schemes:
+White: #E7ECEF
+Dark Blue: #274C77
+Mid Blue: #879CB3
+Lighter Pale Blue: #506C80
+Light Orange: #CD8B76
+Brown: #732F1C
+Burnt Orange: #E76F51 */
+body{
+    height:100%;
+    background-image:url("https://i.pinimg.com/originals/61/f9/51/61f951ee6770732cba132c4b89c316b5.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* .contactPage{
+    margin-top:100px;
+    width:100%;
+    min-height:100%;
+    max-height:fit-content;
+    background-color: rgba(0, 200, 240, 0.2);
+    background-image:url("https://i.pinimg.com/originals/61/f9/51/61f951ee6770732cba132c4b89c316b5.gif");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-inline: auto;
+} */
+
+.contactContainer{
+    margin-top:150px;
+    padding:50px;
+    min-width:400px;
+    max-width:fit-content;
+    height:50%;
+    display:block;
+    background-color: white;
+    margin-inline: auto;
+    border:solid #274C77 5px;
+    box-shadow: 10px 10px rgba(250, 128, 114, 0.2);
+    border-radius:15px;
+    text-align:center;
+}
+#message{
+    height:150px;
+}
+input{
+    background-color:white;
+    border:solid #274C77 5px;
+    border-radius: 5px;
+    margin: 10px;
+    padding:4px;
+    width:300px;
+}
+
+/*Socials Menu */
+
+.socials{
+    display:flex;
+    position:absolute;
+    bottom:0px;
+    width:100%;
+    height:100px;
+    background-color: #a34c36;
+    justify-content: space-around;
+}
+
+.socials button{
+    width:75px;
+    height:70px;
+    padding-left: auto;
+    padding-right:auto;
+    background-color: transparent;
+    border-style:none;
+    margin:10px;
+}
+.socials button img{
+    text-align: center;
+    width:110%;
+    height:100%;
+    margin-left: auto;
+    margin-right:auto;
+}
