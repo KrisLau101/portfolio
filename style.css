@@ -83,7 +83,7 @@ Burnt Orange: #E76F51
 }
 
 .profilePic{
-    src:url("assets/ProfilePic.jpg");
+    content:url("assets/ProfilePic.jpg");
     margin:30px;
     border-radius:200px;
     border: dashed #CD8B76 3px;

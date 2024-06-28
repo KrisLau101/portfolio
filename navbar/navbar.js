@@ -20,5 +20,5 @@ buttonProjects.addEventListener("click", function(){
     window.location = "../projects/projects.html";
 });
 nameHome.addEventListener("click", function(){
-    window.location = "../index/index.html";
+    window.location = "../index.html";
 })
