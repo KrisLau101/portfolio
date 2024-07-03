@@ -1,0 +1,266 @@
+/* Color Schemes:
+White: #E7ECEF
+Dark Blue: #274C77
+Mid Blue: #879CB3
+Lighter Pale Blue: #506C80
+Light Orange: #CD8B76
+Brown: #732F1C
+Burnt Orange: #E76F51
+} */
+html, body{
+    background-color: #ddaa8a;
+}
+
+.projectsContainer{
+    margin-top:100px;
+    width:100%;
+    min-height:100%;
+    max-height:fit-content;
+    transform: translate;
+    background-color: rgba(21, 189, 255, 0.1);
+    background-image:url("../assets/hoveyLake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:800px;
+    height:fit-content;
+    max-height:1000px;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.projectsTitle{
+    width:90%;
+    height:200px;
+    top:50px;
+    position:relative;
+    margin-inline:auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-image:url("../assets/clouds.png") ;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: floating1 7s infinite;
+    transition: all 0.5s ease-in-out;
+}
+#pageTitle{
+    width:fit-content;
+    position:relative;
+    margin-top:100px;
+    margin-inline:auto;
+    font-size: 60px;
+    text-align: center;
+    font-weight:700;
+    text-shadow:rgba(190, 226, 251, 0.7) 5px 5px;
+}
+
+.projects{
+    position:relative;
+    bottom:10px;
+    text-align: center;
+    margin:10px;
+    min-width: 80%;
+    width:fit-content;
+    display:flex;
+    justify-content: space-around;
+    padding:10px;
+    overflow: hidden;
+    transform:translateY(200px);
+    align-items: flex-end;
+    margin-top:-380px;
+    height:700px;
+}
+.project{
+    min-width:26%;
+    width:fit-content;
+    min-height:200px;
+    height:max-content;
+    padding:15px;
+    background-color: #CD8B76;
+    border-radius: 20px;
+    margin:20px;
+    animation: floating1 4s infinite;
+    transition: all 0.5s ease-in-out;
+    box-shadow:rgba(190, 226, 251, 0.3) 5px 4px;
+    bottom:1px;
+}
+.projectHovered{
+    width:130%;
+    min-height:400px;
+    animation:none;
+    transition: height 0.6s ease-in-out;
+    margin-top:-400px;
+    z-index:1;
+}
+
+#chooseAdventure{
+    animation-delay: 300ms;
+}
+#collegePicker{
+    animation-delay: 600ms;
+}
+@keyframes floating1{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+.projectImg{
+    display:none;
+    margin:5px auto;
+    position: relative;
+    width:90%;
+    height:fit-content;
+    max-height:350px;
+}
+
+.projectDescription{
+    width:100%;
+    color:white;
+    font-family: 'Futura';
+    font-size: 16px;
+}
+.projectName{
+    width:100%;
+    color:rgb(226, 238, 255);
+    text-shadow: 2px 1px black;
+    font-family: 'Futura';
+    font-size: 24px;
+}
+
+.projectBut{
+    position:relative;
+    text-align:center;
+    top:10px;
+    color:white;
+    padding: 10px;
+    padding-bottom: 5px;
+    padding-top:5px;
+    background-color: #506C80;
+    border:solid #a2cdec 4px;
+    border-radius: 15px;
+    font-family: 'Futura';
+}
+.projectBut:hover{
+    background-color: #6088a4;
+}
+
+/* Weather */
+.weatherBox{
+    position:absolute;
+    z-index: 900;
+    width:100%;
+    height:1590px;
+    pointer-events: none;
+    overflow:hidden;
+}
+.rain{
+    position:static;
+    z-index: 100;
+    margin:0;
+    width:240%;
+    height:120%;
+    display:block;
+    background-color: rgba(00, 00, 00, 0.2);
+    background-image: url("https://i.pinimg.com/originals/91/95/f4/9195f4dd1b69f90038f627c8af422429.gif");
+    background-blend-mode: multiply;
+    transform:skew(-30deg) translate(-1000px, -400px);
+    background-repeat: repeat;
+    object-fit: cover;
+}
+.weatherButton{
+    font-family: "Courier";
+    position:fixed;
+    text-align:center;
+    bottom:20px;
+    right:20px;
+    z-index:1000;
+    color:white;
+    padding: 12px;
+    font-size:18px;
+    background-color: #506C80;
+    border:solid #274C77 4px;
+    border-radius: 15px;
+}
+.weatherButton:hover{
+    cursor: pointer;
+    background-color: #80a4bd;
+}
+
+/* Other Projects */
+
+.otherProjects{ 
+    background-color: #705443;
+    width:100%;
+    min-height:400px;
+    text-align: center;
+    padding-top: 50px;
+    height:fit-content;
+    padding:30px;
+    padding-bottom:50px;
+}
+#otherProjectsTitle{
+    background-color: #8e6d58;
+    text-align:center;
+    font-family: "Courier";
+    font-weight:800;
+    color:white;
+    width:fit-content;
+    padding:10px;
+    border-radius: 15px;
+    margin-inline:auto;
+}
+.bubbleProject{
+    position:relative;
+    width:95%;
+    margin-inline:auto;
+    text-align: center;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    min-height: 200px;
+    height:fit-content
+}
+
+#bubbleDesc{
+    position:relative;
+    width:60%;
+    height:80%;
+    color:white;
+    background: #CD8B76;
+    box-shadow:#a2cdec 5px 4px;
+    border:groove #506C80 5px;
+    border-radius: 15px;
+    font-family: "Futura";
+    font-size:20px;
+    padding:10px;
+}
+#demoVid{
+    width:35%;
+    height:auto;
+    position:relative;
+    top:5px;
+    border:solid #a2cdec  5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#bubbleTitle{
+    width:100%;
+    color:rgb(226, 238, 255);
+    text-shadow: 2px 1px black;
+    font-family: 'Futura';
+    font-size: 38px;
+}
+.descSmaller{
+    font-size: 16px;
+}
+#boomerangBut{
+    position:relative;
+    margin-bottom:10px;
+}

@@ -1,0 +1,19 @@
+.citations{
+    width:90%;
+    margin-inline:auto;
+    margin-top:160px;
+    background-color: #506C80;
+    border-radius: 20px;
+    border:white solid 4px;
+    padding:20px;
+}
+
+.citList{
+    padding:5px;
+    color:white;
+    font-weight:300;
+    font-size:20px;
+    font-family: "Futura";
+}
+
+

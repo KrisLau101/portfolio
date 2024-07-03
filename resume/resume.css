@@ -4,6 +4,11 @@ h1{
 }
 body{
     background-color: #7aa1be;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/6137845ccfa8877e18491837/1631129485130-CU9KCAO9LKHZIDFV5SCG/sean-lewis_toonorth_loop_1000px.gif?format=2500w");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom:-5px;
 }
 .resumePage{
     width:100%;
@@ -14,11 +19,12 @@ body{
 .resumeContainer{
     margin:40px;
     text-align: center;
-    background-color: #7dc0f0;
+    background:linear-gradient(to right, #CD8B76,#E76F51 ,#94593c);
     height: max-content;
     width:50%;
     display:relative;
     float:left;
+    border-radius: 10px;
 }
 
 .resume{
@@ -33,7 +39,7 @@ body{
     width:40%;
     height:80%;
     margin-top: 20px;
-    display:flex;
+    display:block;
 }
 
 .resumeMenu button{
@@ -51,7 +57,47 @@ body{
     background-color: #7489a0;
 }
 
+#donwloadBut{
+    position:relative;
+    text-align:center;
+    text-decoration: none;
+    top:10px;
+    color:white;
+    padding: 10px;
+    background-color: #506C80;
+    border:solid #000000 4px;
+    border-radius: 15px;
+}
+button:hover{
+    background-color: #6794b5;
+}
 
+#downloadBut a{
+    text-decoration: none;
+    position:relative;
+    color:white;
+    width:100%;
+    height:100%;
+}
+.infoContainer{
+    width: 100%;
+
+}
+
+.menuButs button{
+    width:30%;
+    height:20%;
+    margin:5%;
+    padding:15px;
+    color:white;
+    padding: 10px;
+    background-color: #879CB3;
+    border:solid #274C77 4px;
+    border-radius: 15px;
+}
+.menuButs button:hover{
+    background-color: #7489a0;
+}
 
 /* Color Schemes:
 White: #E7ECEF

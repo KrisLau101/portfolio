@@ -1,0 +1,622 @@
+body{
+    overflow: auto;
+    background-color:transparent;
+}
+html{
+    background-image:url("assets/woodfloor.png");
+    background-size: fill;
+    background-repeat: fill;
+    background-color: rgba(136, 111, 86, 0.725);
+    background-blend-mode: multiply;
+}
+/* Color Schemes:
+White: #E7ECEF
+Dark Blue: #274C77
+Mid Blue: #879CB3
+Lighter Pale Blue: #506C80
+Light Orange: #CD8B76
+Brown: #732F1C
+Burnt Orange: #E76F51
+
+} */
+
+/* Headline */
+.hiName{
+    text-shadow: 2px 2px black;
+    font-size: 50px;
+    font-family: "Courier";
+    text-align: center;
+    color:white;
+    position:relative;
+    top:30%;
+}
+.headlineBox{
+    margin-left:auto;
+    margin-right: auto;
+    height:830px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    background-image: url("https://i.ytimg.com/vi/YOJsKatW-Ts/maxresdefault.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+.textInterests{
+    margin-right: 10px;
+}
+.typingInterests{
+    position: relative;
+    top: 35%;
+    width:fit-content;
+    display:flex;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+.typingInterests p{
+    color:white;
+    text-shadow: 2px 2px black;
+    font-size: 30px;
+    font-family: "Courier";
+    padding: 0.1em;
+    text-align:center;
+    position:relative;
+    transition: all 0.5  ease-in-out
+}
+.blink {
+  animation: blink 0.8s infinite;
+}
+@keyframes blink{
+  to { opacity:0; }
+}
+/* about-me */
+h3{
+    text-align: center;
+    font-size: 40px;
+    font-family: "Courier";
+    color: #e0a08c;
+    text-shadow: 3px 3px black;
+}
+.about-me{
+    background-color: transparent;
+    text-align:center;
+    margin-top: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    padding:15px;
+}
+.profileRight{
+    float:right;
+    width:70%;
+}
+
+/* Spinning Image */
+
+.picContainer{
+    width:34%; 
+    height:auto;
+    margin:40px auto;
+    float:left;
+    perspective: 1000px;
+    position: relative;
+}
+.profilePic{
+    border-radius:300px;
+    width:100%; 
+    height: 100%;
+    position:relative;
+    transform-style: preserve-3d;
+    transition: transform 1s
+}
+
+.profilePic img{
+    border-radius:300px;
+    border: solid transparent 10px;
+    width:100%; 
+    height: 100%;
+    background:linear-gradient(to left, #CD8B76,#E76F51 ,#94593c);
+    background-size: contain;
+    backface-visibility: hidden;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+
+.profilePic .front {
+    transform: rotateY(0deg);
+    height:70%;
+}
+
+.profilePic .back {
+    transform: rotateY(180deg);
+}
+.flipped {
+    transform: rotateY(180deg);
+}
+
+
+.AboutMeInfo{
+    position:relative;
+    background-color: #274C77;
+    text-align:center;
+    margin-top: 10px;
+    margin-left:auto;
+    margin-right:20px;
+    display:block;
+    color: #A3CEF1;
+    font-weight:300;
+    width:90%;
+    height:320px;
+    box-shadow:3px 4px rgb(#CD8B76);
+    font-family:'Futura';
+    border-radius: 50px;
+    border-bottom-left-radius:0px;
+    padding:20px;
+    height:fit-content;
+    min-height: 300px;
+}
+.linkToIntr{
+    position:relative;
+    display:block;
+    text-align:center;
+    text-decoration: none;
+    width:60%;
+    margin-inline:auto;
+    color:white;
+    padding: 10px;
+    background: linear-gradient(0.25turn, #3f87a6, #48758d, #30558d);
+    border:solid #a57a4b 4px;
+    border-radius: 15px;
+}
+.linkToIntr:hover{
+    background-color: #658399;
+    background: linear-gradient(0.75turn, #3f87a6, #48758d, #30558d);
+    transition: all 2s ease-in-out;
+}
+
+/* Skills*/
+.skillsBox{
+    margin-top:50px;
+    color:black;
+    background-color: transparent;
+    display:flex;
+    justify-content: space-around;
+    width:70%;
+    height:320px;
+    margin-inline:auto;
+}
+.skillTitle{
+    margin-top:10px;
+    text-align: center;
+    color:white;
+    font-size:50px;
+    text-shadow:4px 4px #274C77,
+    6px 6px #6096BA,
+    8px 8px #A3CEF1;
+    font-family: "Courier";
+}
+.skill{
+    background-color: #CD8B76;
+    padding: 10px;
+    border-radius: 30px;
+    width:20%;
+    min-height:30%;
+    height:fit-content;
+    margin-inline: 30px;
+    display:block;
+    text-align: center;
+}
+.skill img{
+    width:90%;
+    height:90%;
+}
+
+/* Extra Information */
+.extraInfoBox{
+    display:flex;
+    position:relative;
+    text-align: center;
+    background-color: transparent;
+    justify-content: space-between;
+    margin-top:40px;
+    height:40%;
+    width:100%;
+    background-color:transparent;
+    padding:20px;
+}
+.extraInfoBox div{
+    text-align:center;
+    position: relative;
+    width:48%;
+    background-color:#506C80;
+    border-radius:20px;
+    background-position: 50% 30%;
+    padding:10px;
+    object-fit:fill;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    color:#e0a08c;
+    box-shadow: rgba(224, 160, 140, 0.6) 5px 5px;
+}
+/* Boxes */
+.futureCareer{
+    top:0px;
+    height:fit-content;
+    background-image:url("https://i.ytimg.com/vi/EqnB8Vantv0/maxresdefault.jpg");
+    background-size:cover;
+    height:300px;
+}
+.hobbies{
+    height:400px;
+    background-image:url("https://img.freepik.com/premium-photo/painting-gym-with-window-that-says-mountain-it_910608-317.jpg");
+}
+.extraInfoBox h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size:30px;
+    font-weight: bold;
+}
+.extraInfoBox p{
+    background-color: rgba(00, 00, 00, 0.5);
+    border-radius: 15px;    
+    width:80%;
+    text-align:center;
+    margin-inline:auto;
+    margin-bottom:30px;
+}
+.extraInfoBox div p{
+    margin-top:30px;
+    padding:5px;
+    font-family: "Futura";
+    font-size:20px;
+    color:white;
+}
+/* Interests Boxes */
+
+.intrBox{
+    width:100%;
+    background-color: rgba(128, 164, 189,0.3);
+    height:500px;
+    padding-top:20px;
+    margin-top:50px;
+    position:relative;
+    overflow:hidden;
+    z-index:10;
+}
+
+.intrOnscreen{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    width:100%;
+    z-index:9;
+    height:90%;
+    text-align: center;
+}
+.intrOffscreen{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    display:none;
+    padding: 0;
+    margin:0;
+    width:100%;
+    z-index:9;
+    height:90%;
+    text-align: center;
+}
+
+.intr{
+    display:block;
+    position:absolute;
+    width:20%;
+    height:60%;
+    padding:20px;
+    margin-left:10%;
+    margin-right:10%;
+    background-color: #506C80;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    text-align:center;
+}
+
+.intr h2, .intr p{
+    font-family: "Futura";
+    text-shadow: 2px 2px black;
+    color:white;
+    max-width:100%;
+    width:fit-content;
+    height:50px;
+    text-align:center;
+    font-size: 20px;
+}
+.intr h2{
+    font-size: 30px;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    font-family: "Futura";
+    text-shadow: 5px 5px black;
+    color:white;
+    max-width:100%;
+    width:fit-content;
+    height:50px;
+    text-align:center;
+}
+.intr .content{
+    display:none;
+    font-size:20px;
+    width:90%;
+    text-align: center;
+    color:white;
+}
+
+.intr.expanded .content{
+    display:block;
+    width:100%
+}
+.intr p{
+    text-shadow: none;
+}
+
+.intr.expanded {
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    height: 80%; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+.shrunk {
+    width: 15%;
+    opacity: 0.7;
+}
+.intrBox h3{
+    font-size:50px;
+    padding:10px;
+    color:white;
+    text-shadow:4px 4px #274C77,
+    6px 6px #6096BA,
+    8px 8px #A3CEF1;
+}
+
+/* #intrBio, #intrCompsci, #intrGov, #intrBusiness */
+#boomerangLearning{
+    position:relative;
+    color: pink;
+    bottom:5px;
+    font-size: 20px;
+}
+#intrGov.expanded{
+    height:90%;
+}
+#intrOther.expanded{
+    height:60%;
+}
+
+/*Weather stuff */
+.weatherBox{
+    position:absolute;
+    z-index: 900;
+    width:100%;
+    height:3250px;
+    pointer-events: none;
+    overflow:hidden;
+}
+.rain{
+    position:static;
+    z-index: 100;
+    margin:0;
+    width:240%;
+    height:120%;
+    display:block;
+    background-color: rgba(00, 00, 00, 0.2);
+    background-image: url("https://i.pinimg.com/originals/91/95/f4/9195f4dd1b69f90038f627c8af422429.gif");
+    background-blend-mode: multiply;
+    transform:skew(15deg) translate(-1200px, -400px);
+    background-repeat: repeat;
+    object-fit: cover;
+}
+.weatherButton{
+    font-family: "Courier";
+    position:fixed;
+    text-align:center;
+    bottom:20px;
+    right:20px;
+    z-index:1000;
+    color:white;
+    padding: 12px;
+    font-size:18px;
+    background-color: #506C80;
+    border:solid #274C77 4px;
+    border-radius: 15px;
+}
+.weatherButton:hover{
+    cursor: pointer;
+    background-color: #80a4bd;
+}
+
+.skill:hover{
+    background-color: #e0a08c;
+}
+
+.textCenter{
+    text-align: center;
+    padding-left:30px;
+}
+
+
+
+/* Image Carousel */
+.imageCarousel{
+    bottom:0;
+    width:90%;
+    position:relative;
+    height:500px;
+    display:block;
+    margin-inline:auto;
+    margin-top:-40px;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  height:40%;
+  position: relative;
+  margin: auto;
+  margin-inline:auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  width:90%;
+  height:90%;
+  margin-inline:auto;
+  border: 20px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 28%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: fit-content;
+  float:right;
+  background-color:#6096BA;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: "Futura";
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #eff1ff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #6782ac;
+}
+
+/* Fading animation */
+.fade {
+  animation: fade 1.5s forwards
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Blinking (on page load)*/
+
+.blinkContainer{
+    position: fixed;
+    z-index: 69420;
+    width:100%;
+    height:100%;
+    pointer-events: none;
+    overflow:hidden;
+}
+.blinkTop{
+    position: fixed;
+    margin:0;
+    background-color: black;
+    width:100%;
+    height:50%;
+    top:0;
+    transition:all 0.3s ease-in-out;
+    animation:blinking 5s forwards;
+    animation-delay: 500ms;
+}
+.blinkBottom{
+    position: fixed;
+    margin:0;
+    background-color: black;
+    width:100%;
+    height:50%;
+    bottom:0;
+    transition:all 0.3s ease-in-out;
+    animation:blinking 5s forwards;
+    animation-delay: 500ms;
+}
+
+@keyframes blinking {
+    0%{
+        height:50%;
+    }
+    5%{
+        height:50%;
+    }
+    35%{
+        height:30%;
+    }
+    50%{
+        height:50%;
+    }
+    70%{
+        height:10%;
+    }
+    72%{
+        height:8%;
+    }
+    90%{
+        height: 50%;
+    }
+    100%{
+        height: 0%;
+    }
+}

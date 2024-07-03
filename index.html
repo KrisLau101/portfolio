@@ -1,6 +1,7 @@
 <html>
     <head>
-        <title class="Title">Kris' Website</title>
+        <title class="Title">Welcome!</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.png">
         <link rel="stylesheet" href="navbar/navbar.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
@@ -18,13 +19,21 @@
         <div class="navButs">
         <button class="buttonResume">Resume</button>
         <button class="buttonProjects">Projects</button>
-        <button class="buttonContact">Contact Me!</button>
+        <button class="buttonContact">Contact Me</button>
+        <button class="buttonCitations">Citations</button>
+        <button class="butChinese">Translate</button>
         </div>
     </div>
 </nav>
+<!-- Blinking Animation-->
+<div class="blinkContainer">
+    <div class="blinkTop"></div>
+    <div class="blinkBottom"></div>
+</div>
+
 <!-- Weather stuff -->
 <div class="weatherBox">
-<img class="rain" src="https://i.pinimg.com/originals/91/95/f4/9195f4dd1b69f90038f627c8af422429.gif">
+    <div class="rain"></div>
 </div>
 <button class="weatherButton">Change to Sunny 🔆</button>
 
@@ -34,65 +43,147 @@
 <span class="typingInterests"> 
         <p class="textInterests">I'm interested in </p><p id="word"></p><p class="header-sub-title blink">|</p>
 </span>
-<!-- https://stackoverflow.com/questions/54849362/how-to-achieve-this-typing-deleting-effect -->
+    <!-- https://stackoverflow.com/questions/54849362/how-to-achieve-this-typing-deleting-effect -->
 </div>
 
 <!-- About me section -->
-<section class="about-me">
-    <img class = "profilePic" src="../assets/ProfilePic.jpg" alt="profile pic">
-    <div class="AboutMeInfo">
-        <br>
-        <br>
-        <h4> I'm a Junior at Signature School, interested in Biology, Computer Science and Entrepreneurship. Outside of school, I'm the CEO of Boomerang Learning, an AI-based ed-tech startup that I created with a few friends. I enjoy public speaking and government; which is why I do Mock Trial and Youth Model Government. I enjoy science, and the field of biology </h4>
+<div class="about-me">
+    <div class="picContainer">
+        <div class="profilePic" id="profilePic">
+            <img class= "front" src="assets/ProfilePic.jpg" alt="profile pic front">
+            <img class= "back" src="assets/KrisHeadshot.jpg" alt="profile pic back">
+        </div>
     </div>
-</section>
 
-<div class="extraInfoBox">
-
-    <div class="futureCareer">
-        <h3>Future Career Plans</h3>
-        <p> I aspire to be in the field of medicine</p>
-        <img id="biochem" alt="biochem" src="https://assets.telegraphindia.com/telegraph/2022/Mar/1646469056_031.jpg">
-    </div>
-    <div class="hobbies">
-        <h3>Hobbies</h3>
-        <p>I like to go to the gym, </p>
-    </div>
-    <div class="anotherBox">
-        <h3> More about my extra-curriculars</h3>
-        <p> I like to do stuff</p>
-        <button id="">More about me</button>   
+    <div class="profileRight">
+        <div class="AboutMeInfo">
+            <h4> I'm a Junior at Signature School, interested in Biology, Computer Science, Entrepreneurship, Government and Law, Voluntering, and much more. I'm the CEO of Boomerang Learning, an AI-based ed-tech I created with a couple friends. I like public speaking, leadership, graphic design, networking, and research. 
+                <br><br>
+            <a class="linkToIntr" href="index.html#interestsBox">About My Interests</a>
+        </div>
+        <div class="extraInfoBox">
+            <div class="hobbies">
+                <h3>Hobbies</h3>
+                <p>In my free time, I like to go to workout. I also enjoy running, playing basketball, and rock-climbing.
+                </p>
+            </div>
+            <div class="futureCareer">
+                <h3>Future Career Plans</h3>
+                <p>I hope to major in Biomedical Engineering or Biochemistry. I want to combine my passion for Computer Science and Biology, as well the love for building things.</p>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="intrBox">
-    <div class="intr"alt="intrCompsci">
-        <p>I like to Code</p>
-    </div>
-    <div class = "intr" alt="intrBusiness">
-        <p>I like Business</p>
-    </div>
-    <div class="intr" alt="intrGov"> 
-        <p>I like Government</p>
-    </div>
-    <div class="intr" alt="intrBio">
-        <p>I like Biology</p>
-    </div>
+<!-- Intr Box-->
+
+<div id="interestsBox" class="intrBox">
+    <h3 id="InterestsTitle">Interests</h3>
+    <br><br>
+    <ul class="intrOnscreen">
+        <li class="intr"id="intrCompsci">
+            <h1>💻</h1>
+            <h2>Computer Science</h2>
+            <div class="content">
+                <p>At 12, I watched a couple YouTube tutorials on Javascript, Python and learned the basics of the two, but never mastered it. Because of my inexperience, I learned bubble.io, a no-code platform that is based on HTML and CSS, to develop my business' platform. And now in 2024, I am an intern at the NexTech Catapult Program which has taught me HTML, CSS, and Javascript. I am currently taking Harvard's CS50 Online, and attempting to learn Python</p>
+            </div>
+        </li>
+        <li class = "intr" id="intrBusiness">
+            <h1>💼</h1>
+            <h2 style='font-size:28px'>Business/ Entrepreneurship</h2>
+            <div class="content">
+                <p> I'm the CEO of Boomerang Learning, an AI-based ed-tech startup that I created with a couple friends in 2023. We have competed in multiple business compeittions. Winning 3rd Place in UE Changemaker, and making it to Regionals in InnovateWithIn. Apart from comeptitions, our business has received 13.4k in grants from ISBDC's INTaP program. And we are currently part of Microsoft Founders Hub. <br> <a id="boomerangLearning" target="_blank" href="https://boomeranglearning.com">About Boomerang Learning</a></p>
+            </div>
+        </li>
+        <li class="intr" id="intrGov"> 
+            <h1>🏛️</h1>
+            <h2>Government and Law</h2>
+            <div class="content">
+                <p>
+                Indiana Youth and Government<br> I am the curret Secretary of State of INYAG, an annual state-wide student civil-engagement program where students write and debate bills on pressing issues and debate them state house. I was elected to the third highest position last year, and passed my Mock bill banning BPA in plastics
+                <br> Mock Trial <br>
+                I am the co-captain of my Mock Trial team at Signature School. I enjoy public speaking and debating with others</p>
+            </div>
+        </li>
+        <li class="intr" id="intrBio">
+            <h1>🔬</h1>
+            <h2>Biology and Science</h2>
+            <div class="content"> 
+            <p>Science is honestly my favourite subject at school. I am particularly passionate about Biology. I am the current President of theBioOlympiad club at Signature School. This is a club where we learn about Biology to prepare for the USABO exam. I have self-studied AP Biology, and was two points away from qualifying as a Semi-Finalist. I do competitions like the Breakthrough Junior Challenge, USABO, and I am attempting to get into Science Research. I am interested in Comptuational Analysis in Biology, specifically CNN in Medical Image analysis</p>
+         </div>
+        </li>
+    </ul>  
 </div>
 
+<!-- Hidden Interests Box -->
+<div class="hiddenInterests">
+    <ul class="intrOffscreen">
+        <li class="intr"id="intrVolunteer">
+            <h1>🤝</h1>
+            <h2 class="textCenter">Volunteering</h2>
+            <div class="content">
+                <p>I volunteer every week as a tutor at the CenterPoint YMCA. I co-founded a student-led community service initiative that provides daily tutoring for kids, and I lead a team of 7 students. At the Y, I also help coach their middle school First LEGO League team
+                    <br><br> I also volunteer at my church, at the food bank, at school, and many other evenets.
+                </p>
+            </div>
+        </li>
+        <li class="intr" id="intrOther">
+            <h1>🗣️</h1>
+            <h2 class="textCenter">Other Interests</h2>
+            <div class="content">
+                <p>
+                Activism <br>
+                I am part of an Organization called Confront The Climate Crisis. It is a student-led organization with 90 participants. We use social media and youth voice to pressure lawmakers to pass climate-friendly legislation </p>
+        
+            </div>
+        </li>
+    </ul>
+</div>
 
-
+<h1 class="skillTitle"> My Skills</h1>
 <div class="skillsBox">
     <span class="skill">
-        <img alt="HTML" src="assets/html.png"></span>
+        <img onclick="openHTML()"alt="HTML" src="assets/html.png"></span>
     <span class="skill">
-        <img id="css" alt="CSS" src="assets/css.png"></span>
+        <img onclick="openCSS()"id="css" alt="CSS" src="assets/css.png"></span>
     <span class="skill">
-        <img id="javascript" alt="Javascript" src="assets/js.png"></span>
+        <img onclick="openJS()"id="javascript" alt="Javascript" src="assets/js.png"></span>
     <span id ='bubbleIO' class="skill">
         <img alt="bubble.io" src="assets/bubble.png"></span>
 </div>
 
+<div class="imageCarousel">
+    <div class="carousel">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://media.licdn.com/dms/image/D5622AQEzuTwQCbNpcQ/feedshare-shrink_2048_1536/0/1710476978008?e=1723075200&v=beta&t=1B8TAcnGz0Ht4W3ehqc8bret1iOeVencuuqr9us3IVE" style="width:70%">
+            <div class="text">Presenting my bill on BPA plastics in the Indiana Senate!</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://media.licdn.com/dms/image/D5622AQGeouzQtFfjXQ/feedshare-shrink_1280/0/1706416746915?e=1723075200&v=beta&t=42hXICm0dVjc15R6OwnP20hYZBWMLiRa3q-jKZRR3vk" style="width:50%">
+            <div class="text">Boomerang Learning with the Mayor during UE Changemaker Challenge</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/FLL.png" style="width:60%; max-height:100%">
+            <div class="text">Volunteering as student coach of a First Lego League Team</div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center">
+        <br>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</div>
 
 </body>
 </html>
+

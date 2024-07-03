@@ -3,15 +3,12 @@ let buttonContact = document.querySelector(".buttonContact")
 let buttonProjects = document.querySelector(".buttonProjects")
 let buttonResume = document.querySelector(".buttonResume")
 let nameHome = document.querySelector(".navName")
+let buttonCitations = document.querySelector(".buttonCitations")
 
 // Navbar Buttons
 buttonResume.addEventListener("click", function(){
     window.location = "../resume/resume.html";
 });
-// buttonGame.addEventListener("click", function(){
-//     window.location = "../chrome-dinosaur-game/clonedgame.html";
-// });
-
 buttonContact.addEventListener("click", function(){
     window.location = "../contact/contact.html";
 });
@@ -21,4 +18,8 @@ buttonProjects.addEventListener("click", function(){
 });
 nameHome.addEventListener("click", function(){
     window.location = "../index.html";
+})
+
+buttonCitations.addEventListener("click", function(){
+    window.location = "../citations/citations.html";
 })

@@ -14,8 +14,6 @@ nav{
     width:100%;
     top:0;
 }
-
-
 .navName{
     display:block;
     font-size:40px;
@@ -26,6 +24,15 @@ nav{
 .navName:hover{
     cursor: pointer;
     color:#E76F51;
+    animation: spin 1000 20ms 1;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .navButs {
@@ -59,6 +66,7 @@ nav{
     border:solid white 4px;
     font-family: "Courier";
     border-radius: 10px;
+    transition: all 0.1s ease-in-out;
 }
 .navbar button:hover{
     background-color: #E76F51;
