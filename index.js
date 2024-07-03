@@ -202,7 +202,7 @@ function carousellSpin() {
         lastBox = intrOnscreen[intrOnscreen.length-1]
         firstBox = intrOnscreen[0]
         // When the box leaves the screen
-        if (getLeftPosition(firstBox) >= (window.innerWidth*0.05)){
+        if (getLeftPosition(firstBox) >= (window.innerWidth*0.08)){
             // Remove Last Box from offscreen
             let newBox = intrOffscreen.pop();
             // Add offscreen Box to Onscreen

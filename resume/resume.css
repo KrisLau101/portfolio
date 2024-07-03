@@ -5,10 +5,11 @@ h1{
 body{
     background-color: #7aa1be;
     background-image: url("https://images.squarespace-cdn.com/content/v1/6137845ccfa8877e18491837/1631129485130-CU9KCAO9LKHZIDFV5SCG/sean-lewis_toonorth_loop_1000px.gif?format=2500w");
-    background-size: contain;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
     margin-bottom:-5px;
+    background-size: auto;
+    background-repeat: repeat-y;
 }
 .resumePage{
     width:100%;
